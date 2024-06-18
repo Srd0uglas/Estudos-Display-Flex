@@ -1,0 +1,90 @@
+/* por padrão toda div fica uma embaixo da outra display:block */
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.caixona{
+    background-color: #1e293b;
+    /* Ocupar a tela toda */
+    height: 100vh;
+    width: 100vw;
+    padding: 10px;
+
+    /* flex-direction */
+
+    /* deixou as div's uma do lado da outra */
+    display: flex;
+
+     /* deixou as div's uma embaixo da outra */
+    /* flex-direction: column; */
+
+    /* as divs estão de trás para frente (do 6 ao 1) */
+    /* flex-direction: row-reverse; */
+
+    /* deixou as div's uma embaixo da outra mas a primeira div é a da caixa 6 */
+    /* flex-direction: column-reverse; */
+
+    /* deixa as caixas crescerem e se dividirem no espaço que é limitado */
+    /* Flex-Wrap */
+    
+    /* se o elemento for muit grande (caixas roxas) não ficam maior que o pai (a div "caixona") */
+    /* flex-wrap: nowrap; */
+
+    /* cresce e fica maior que o elemento pai */
+    /* flex-direction: wrap; */
+
+
+    /* justify-content */
+    
+    /* todas as caixas centralizadas no topo */
+    justify-content: center;
+    /* todas as caixas no canto esquerdo da tela (começo) */
+    /* justify-content: flex-start; */
+    /* todas as caixas no canto direito da tela */
+    /* justify-content: flex-end; */
+    /* separa as divs e fazem com que elas preencham o espaço inteiro */
+    /* justify-content: space-between; */
+    /* separa as divs e fazem com que elas preencham o espaço deixando somente um espaço antes de omeçar e depois de começar as cixas roxas */
+    /* justify-content: space-evenly; */
+    /* justify-content: space-around; */
+
+    /* align-items */
+
+    /* align-items: center;  + justify-content: center; == caixas roxas centralizadas */
+    /* todas as caixas centralizadas ao meio */
+    /* align-items: center; */
+    
+    /* jogou as caixas roxas para o final da tela (lá embaixo) */
+    /* align-items: flex-end; */
+    /* jogou as caixas roxas para o começo da tela (lá em cima) */
+    /* align-items: flex-start; */
+
+
+    /* gap */
+    
+    /* cria um espaçamento entre as caixas */
+    /* gap: 90px; */
+
+
+
+
+
+
+
+
+}
+
+.item{
+    background-color: #7e22ce;
+    margin: 10px;
+    color: #fff;
+    font-size: 22px;
+    border-radius: 5px;
+    width: 100px;
+    height: 100px;
+}
