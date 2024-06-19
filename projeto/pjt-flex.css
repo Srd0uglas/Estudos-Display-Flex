@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* fez os cards desgrudarem de cima da tela */
+    height: 100vh;
+    
+}
+main{
+    display: flex;
+  
+
+}
+
+section{
+    border: 3px solid #525252;
+    border-radius: 5px;
+    display: flex;
+}
+ul{
+    margin: 30px;
+}
+
+.salario{
+    display: flex;
+}
+
+h2{
+    font-size: 2.5rem;
+    text-align: center;
+    background-color: #b4b4b4;
+    color: #FFF;
+    padding: 10px;
+}
+
+h3{
+    margin: 20px;
+    background-color: #84cc16;
+    color: #FFF;
+    padding: 3px;
+    border-radius: 3px;
+}

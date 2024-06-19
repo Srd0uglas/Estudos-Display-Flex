@@ -48,7 +48,7 @@
     /* justify-content: flex-end; */
 
     /* separa as divs e fazem com que elas preencham o espaço inteiro */
-    /* justify-content: space-between; */
+    justify-content: space-between;
 
     /* separa as divs e fazem com que elas preencham o espaço deixando somente um espaço antes de começar e depois de começar as caixas roxas */
     /* justify-content: space-evenly; */
@@ -58,7 +58,7 @@
 
     /* align-items: center;  + justify-content: center; == caixas roxas centralizadas */
     /* todas as caixas centralizadas ao meio */
-    /* align-items: center; */
+    align-items: center;
     
     /* jogou as caixas roxas para o final da tela (lá embaixo) */
     /* align-items: flex-end; */
@@ -70,6 +70,19 @@
     
     /* cria um espaçamento entre as caixas roxas */
     /* gap: 90px; */
+
+
+     /* as caixas roxas tem 100px mas conforme a tela fica maior as caixas acompanham a dimensão da tela */
+    /* tambem posso fazer com que só um elemento cresca com essa propriedade colocando uma classe no item e aplicando o flex grow onde todos os quadrados vão crescer as o que tem a classe vai crescer o dobro */
+    /* flex-grow: 1; */
+   
+    
+
+
+   
+
+
+
 }
 .item{
     background-color: #7e22ce;
@@ -77,6 +90,19 @@
     color: #fff;
     font-size: 22px;
     border-radius: 5px;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
+    /* order é para trocar a ordem, por exemplo a caixa 3 ficou no ligar da caixa 1 */
+    /* order: 2; */
 }
+
+.item3{
+    /* order: 1; */
+    /* deixou só o quadrado 3 no final da tela */
+    /* align-self: flex-end; */
+}
+.item6{
+    /* deixou só o quadrado 6 no começo da tela */
+    /* align-self: flex-start; */
+}
+
