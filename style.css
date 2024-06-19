@@ -1,7 +1,4 @@
 /* por padrão toda div fica uma embaixo da outra display:block */
-
-
-
 *{
     margin: 0;
     padding: 0;
@@ -15,12 +12,12 @@
     width: 100vw;
     padding: 10px;
 
-    /* flex-direction */
+    /* FLEX-DIRECTION */
 
     /* deixou as div's uma do lado da outra */
     display: flex;
 
-     /* deixou as div's uma embaixo da outra */
+    /* deixou as div's uma embaixo da outra */
     /* flex-direction: column; */
 
     /* as divs estão de trás para frente (do 6 ao 1) */
@@ -32,7 +29,7 @@
     /* deixa as caixas crescerem e se dividirem no espaço que é limitado */
     /* Flex-Wrap */
     
-    /* se o elemento for muit grande (caixas roxas) não ficam maior que o pai (a div "caixona") */
+    /* se o elemento for muito grande (caixas roxas) não ficam maior que o pai (a div "caixona") */
     /* flex-wrap: nowrap; */
 
     /* cresce e fica maior que o elemento pai */
@@ -43,13 +40,17 @@
     
     /* todas as caixas centralizadas no topo */
     justify-content: center;
+
     /* todas as caixas no canto esquerdo da tela (começo) */
     /* justify-content: flex-start; */
+
     /* todas as caixas no canto direito da tela */
     /* justify-content: flex-end; */
+
     /* separa as divs e fazem com que elas preencham o espaço inteiro */
     /* justify-content: space-between; */
-    /* separa as divs e fazem com que elas preencham o espaço deixando somente um espaço antes de omeçar e depois de começar as cixas roxas */
+
+    /* separa as divs e fazem com que elas preencham o espaço deixando somente um espaço antes de começar e depois de começar as caixas roxas */
     /* justify-content: space-evenly; */
     /* justify-content: space-around; */
 
@@ -67,18 +68,9 @@
 
     /* gap */
     
-    /* cria um espaçamento entre as caixas */
+    /* cria um espaçamento entre as caixas roxas */
     /* gap: 90px; */
-
-
-
-
-
-
-
-
 }
-
 .item{
     background-color: #7e22ce;
     margin: 10px;
