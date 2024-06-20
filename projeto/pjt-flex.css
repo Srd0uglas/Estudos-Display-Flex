@@ -6,22 +6,37 @@
 
 body{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center;
+    justify-content: center; */
     /* fez os cards desgrudarem de cima da tela */
     height: 100vh;
     
 }
 main{
     display: flex;
-  
-
+    justify-content: center;
+    /* Quebrar a linha */
+    flex-wrap: wrap;
+    max-width: 80%;
+    gap: 20px;
+    position: absolute;
+    /* left: 0; Define a posição inicial do elemento à esquerda */
+    left: 0;
+    /* top: 50%; transform: translateY(-50%);: Centraliza verticalmente o elemento na tela. */
+    top: 50%;
+    transform: translateY(-50%);
+    animation: deslizar 2s forwards;
 }
 
 section{
     border: 3px solid #525252;
     border-radius: 5px;
     display: flex;
+    flex-basis: 250px;
+    flex-grow: 1;
+    /* deixou os cards em colunas */
+    flex-direction: column;
+
 }
 ul{
     margin: 30px;
@@ -29,6 +44,11 @@ ul{
 
 .salario{
     display: flex;
+    align-items: center;
+    
+}
+.salariojr{
+    margin-top: 50px;
 }
 
 h2{
@@ -44,5 +64,14 @@ h3{
     background-color: #84cc16;
     color: #FFF;
     padding: 3px;
-    border-radius: 3px;
+    border-radius: 6px;
+}
+@keyframes deslizar {
+    0% {
+        left: 0;
+    }
+    100% {
+        /* calc(50% - 50px): Ajuste necessário para parar o elemento exatamente no meio da tela.  */
+        left: calc(30% - 30px); /* Ajuste para o elemento parar no meio */
+    }
 }
