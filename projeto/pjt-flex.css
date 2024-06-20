@@ -22,9 +22,7 @@ main{
     position: absolute;
     /* left: 0; Define a posição inicial do elemento à esquerda */
     left: 0;
-    /* top: 50%; transform: translateY(-50%);: Centraliza verticalmente o elemento na tela. */
-    top: 50%;
-    transform: translateY(-50%);
+    top: 10%;
     animation: deslizar 2s forwards;
 }
 
